@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    background: rgb(0,0,0);
+background: linear-gradient(288deg, rgba(0,0,0,1) 0%, rgba(198,0,255,1) 100%);
+    /* border: 2px red solid; */
+}
+.container{
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 2rem;
+    background-color: white;
+    /* border: 2px red solid; */
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.c1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.c2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.c3{
+    accent-color: rgb(13, 255, 13);
+    margin-left: 0.5rem;
+}
+#id1{
+    padding: 0.4rem;
+}
+#id2{
+    padding: 0.4rem 10.2rem;
+}
+#id3{
+    margin-left: 5rem;
+}
+#select{
+    padding: 0.4rem 12.1rem;
+    outline: none;
+}
+input{
+    outline: none;
+}
+button{
+    padding: 0.5rem;
+    margin-right: 30rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
