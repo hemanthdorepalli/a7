@@ -10,64 +10,98 @@ body{
     place-content: center;
     background: rgb(0,0,0);
 background: linear-gradient(288deg, rgba(0,0,0,1) 0%, rgba(198,0,255,1) 100%);
-    /* border: 2px red solid; */
 }
 .container{
     height: 80vh;
     width: 60vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     border-radius: 2rem;
     background-color: white;
-    /* border: 2px red solid; */
+    grid-template-areas: 
+    'a a a'
+    'b c d'
+    'e f f'
+    'g h h'
+    'i j k'
+    'l m m'
+    'n n n'
+    'o o o '
+    ;
 }
-h1{
+.header{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
-    text-align: center;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-right-radius:2rem;
+    border-top-left-radius:2rem;
 }
-.c1{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+.name{
+    grid-area: b;
+    padding-top: 10px;
+    padding-left: 5px;
 }
-.c2{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+.firstnamelabel{
+    grid-area: c;
+    padding-top: 10px;
+   
 }
-.c3{
+.lastnamelabel{
+    grid-area: d;
+    padding-top: 10px;
+    
+}
+.company{
+    grid-area: e;
+    padding-left: 5px;
+}
+.companylabel{
+    grid-area: f;
+}
+.email{
+    grid-area: g;
+    padding-left: 5px;
+}
+.emaillabel{
+    grid-area: h;
+}
+.phone{
+    grid-area: i;
+    padding-left: 5px;
+}
+.areacodelabel{
+    grid-area: j;
+}
+.numberlabel{
+    grid-area: k;
+}
+
+.subject{
+    grid-area: l;
+    padding-left: 5px;
+}
+.subjectlabel{
+    grid-area: m;
+}
+.select{
+    grid-area: n;
+    padding-left: 5px;
     accent-color: rgb(13, 255, 13);
-    margin-left: 0.5rem;
 }
-#id1{
-    padding: 0.4rem;
-}
-#id2{
-    padding: 0.4rem 10.2rem;
-}
-#id3{
-    margin-left: 5rem;
-}
-#select{
-    padding: 0.4rem 12.1rem;
-    outline: none;
-}
-input{
-    outline: none;
+.button{
+    grid-area: o;
+    padding: 5px;
 }
 button{
-    padding: 0.5rem;
-    margin-right: 30rem;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
-    border-radius: 1rem;
+    padding: 10px 40px;
+    background-color: red;
+    border-radius: 20px;
     border: none;
-    background-color: rgb(255, 0, 0);
     color: white;
+}
+p{
+    padding-bottom: 10px;
 }
